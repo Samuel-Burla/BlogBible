@@ -35,7 +35,7 @@ $head_title = $_SERVER["SCRIPT_NAME"];
             </ul>
 
             <div class="col-md-3 text-end">
-                <button type="button" class="btn btn-outline-primary me-2">Login</button>
+                <a href="login.php" class="btn btn-outline-primary me-2">Login</a>
                 <button type="button" class="btn btn-primary">Sign-up</button>
             </div>
         </header>
