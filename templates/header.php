@@ -29,13 +29,8 @@ $head_title = $_SERVER["SCRIPT_NAME"];
             <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
                 <?php foreach ($mainMenu as $key => $itemMenu) { ?>
                     <?php if (!array_key_exists("exclude", $itemMenu)) { ?>
-
                         <li><a href="<?= $key ?>" class="nav-link px-2 link-secondary"><?= $itemMenu["title"] ?></a></li>
-
                     <?php  } ?>
-
-
-
                 <?php } ?>
             </ul>
 
