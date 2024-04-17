@@ -1,10 +1,11 @@
 <?php
 require_once __DIR__ . "/templates/header.php";
 require_once __DIR__ . "/lib/articlesList.php";
+require_once __DIR__ . "/lib/config.php";
 require_once __DIR__ . "/lib/pdo.php";
 require_once __DIR__ . "/lib/articlesList.php";
 
-$articles = getArticles($pdo, 3);
+$articles = getArticles($pdo, _HOME_ARTICLES_LIMIT_);
 
 
 ?>

@@ -1,5 +1,6 @@
 <?php
 require_once __DIR__ . "../../lib/menu.php";
+require_once __DIR__ . "../../lib/session.php";
 
 $head_title = $_SERVER["SCRIPT_NAME"];
 
@@ -35,8 +36,11 @@ $head_title = $_SERVER["SCRIPT_NAME"];
             </ul>
 
             <div class="col-md-3 text-end">
-                <a href="login.php" class="btn btn-outline-primary me-2">Login</a>
-                <button type="button" class="btn btn-primary">Sign-up</button>
+                <?php if (isset($_SESSION['user'])) { ?>
+                    <a href="logout.php" class="btn btn-primary">Deconnexion</a>
+                <?php } else { ?>
+                    <a href="login.php" class="btn btn-outline-primary me-2">Connexion</a>
+                <?php } ?>
             </div>
         </header>
     </div>
